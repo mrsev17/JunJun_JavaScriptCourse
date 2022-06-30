@@ -5,24 +5,24 @@ const calcOneToNum = Number(valueCalcOne); // Change type of result from prompt,
 const calcTwoToNum = Number(valueCalcTwo);
 
 function plusValue() {      // Make function for each operation with math operators plus, minus, divide, multiply
-    let resultPlus = calcOneToNum + calcTwoToNum;
+    const resultPlus = calcOneToNum + calcTwoToNum;
     console.log(resultPlus);
 }
 function minusValue() {
-    let resultMinus = calcOneToNum - calcTwoToNum;
+    const resultMinus = calcOneToNum - calcTwoToNum;
     console.log(resultMinus);
 }
 function multiplyValue() {
-    let resultMultiply = calcOneToNum * calcTwoToNum;
+    const resultMultiply = calcOneToNum * calcTwoToNum;
     console.log(resultMultiply);
 }
 function divideValue() {
-    let resultDivide = calcOneToNum / calcTwoToNum;
+    const resultDivide = calcOneToNum / calcTwoToNum;
     console.log(resultDivide);
 }
 
 
-let finalVarPlus = plusValue(); // Make variable for final results of functions
-let finalVarMinus = minusValue();
-let finalVarMultiply = multiplyValue();
-let finalVarDivide = divideValue();
+const finalVarPlus = plusValue(); // Make variable for final results of functions
+const finalVarMinus = minusValue();
+const finalVarMultiply = multiplyValue();
+const finalVarDivide = divideValue();
