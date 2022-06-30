@@ -6,5 +6,4 @@ console.log(typeof strTen);
    In this case number 10 will change type for string, so we
    get type string of final value and this work not like usual
    math operation, so finally constant strTen equal "1010".
-
- */
+*/
