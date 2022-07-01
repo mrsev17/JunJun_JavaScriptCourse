@@ -1,3 +1,5 @@
+"use strict";
+
 const strTen = "10" + 10;
 console.log(typeof strTen);
 

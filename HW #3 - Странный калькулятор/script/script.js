@@ -1,3 +1,5 @@
+"use strict";
+
 const valueCalcOne = prompt("Input first value"); // Take value from user
 const valueCalcTwo = prompt("Input second value");
 

@@ -1,3 +1,5 @@
+"use strict";
+
 function strangeCalculator() {
 
     const selectOptionMath = prompt("Enter one of option for math operation. Option: add, sub, mult, div");
