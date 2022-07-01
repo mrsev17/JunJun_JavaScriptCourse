@@ -1,12 +1,12 @@
 "use strict";
 
-const valueCalcOne = prompt("Input first value"); // Take value from user
+const valueCalcOne = prompt("Input first value");
 const valueCalcTwo = prompt("Input second value");
 
-const calcOneToNum = Number(valueCalcOne); // Change type of result from prompt, cause its return string
+const calcOneToNum = Number(valueCalcOne);
 const calcTwoToNum = Number(valueCalcTwo);
 
-function plusValue() {      // Make function for each operation with math operators plus, minus, divide, multiply
+function plusValue() {
     const resultPlus = calcOneToNum + calcTwoToNum;
     console.log(resultPlus);
 }
@@ -24,7 +24,7 @@ function divideValue() {
 }
 
 
-const finalVarPlus = plusValue(); // Make variable for final results of functions
+const finalVarPlus = plusValue();
 const finalVarMinus = minusValue();
 const finalVarMultiply = multiplyValue();
 const finalVarDivide = divideValue();
