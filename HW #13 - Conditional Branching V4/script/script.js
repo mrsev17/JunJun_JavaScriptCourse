@@ -39,7 +39,7 @@ if ((num % 2) === 0) {
 const inputData = prompt("Input integer number");
 let numData = +inputData;
 
-let posOrNeg;
+let posOrNeg = null;
 
 if (numData > 0) {
     posOrNeg = " positive";
@@ -47,12 +47,13 @@ if (numData > 0) {
     posOrNeg = " negative";
 }
 
-if (numData < 0) {
+/*if (numData < 0) {
     numData = numData.toString();
     numData = numData.substring(1);
 }
+*/
 
-const lengthData = numData.length;
+const lengthData = inputData.length;
 
 numData = +numData;
 
