@@ -47,12 +47,6 @@ if (numData > 0) {
     posOrNeg = " negative";
 }
 
-/*if (numData < 0) {
-    numData = numData.toString();
-    numData = numData.substring(1);
-}
-*/
-
 const lengthData = inputData.length;
 
 numData = +numData;
