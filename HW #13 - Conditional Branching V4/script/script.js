@@ -101,8 +101,8 @@ const sumOfOne = firstLength + secondLength;
 const sumOfTwo = secondLength + thirdLength;
 const sumOfThird = thirdLength + firstLength;
 
-if ((firstLength === 0) || (secondLength === 0) || (thirdLength === 0)) {
-    alert("We cannot build triangle if one of side is equal zero.");
+if ((firstLength <= 0) || (secondLength <= 0) || (thirdLength <= 0)) {
+    alert("We cannot build triangle if one of side is equal or less zero.");
 } else if ((sumOfOne > thirdLength) || (sumOfTwo > firstLength) || (sumOfThird > secondLength)) {
     alert("We can build triangle");
 } else {
