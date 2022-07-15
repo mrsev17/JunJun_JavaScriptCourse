@@ -8,7 +8,7 @@ let sportUser;
 const yearOfBorn = prompt("Please, input your year of born");
 
 switch (true) {
-    case (yearOfBorn === null):
+    case (yearOfBorn === null || yearOfBorn === ""):
         ageValue = "You didn't input that information.";
         alert("Very sad, you didn't input year of born.");
         break;
@@ -20,7 +20,7 @@ switch (true) {
 const cityOfLife = prompt("Input the name of city where do you live");
 
 switch (true) {
-    case (cityOfLife === null):
+    case (cityOfLife === null || cityOfLife === ""):
         cityUser = "You didn't input that information.";
         alert("Very sad, you didn't input city where you live.");
         break;
@@ -40,7 +40,7 @@ switch (true) {
 const sportOfFav = prompt("Which type of sport do you like?");
 
 switch (true) {
-    case (sportOfFav === null):
+    case (sportOfFav === null || sportOfFav === ""):
         sportUser = "You didn't input that information.";
         alert("Very sad, you didn't input type of sport which you like.");
         break;
