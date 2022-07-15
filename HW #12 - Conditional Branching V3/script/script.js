@@ -1,9 +1,9 @@
 "use strict";
 
 const currentYear = new Date().getFullYear();
-let ageValue;
-let cityUser;
-let sportUser;
+let ageValue = null;
+let cityUser = null;
+let sportUser = null;
 
 const yearOfBorn = prompt("Please, input your year of born");
 
