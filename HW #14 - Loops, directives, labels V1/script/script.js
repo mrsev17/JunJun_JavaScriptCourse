@@ -43,12 +43,7 @@ let finalValueTwo = 0;
 
 for (let i = 0; i < arrTwo.length; i+=1) {
 
-    let newValue = 0;
-    let squareVar = 0;
-
-    newValue +=arrTwo[i];
-    squareVar = Math.pow(newValue,2);
-    finalValueTwo += squareVar;
+    finalValueTwo += Math.pow(arrTwo[i],2);
 
 }
 console.log(finalValueTwo);
