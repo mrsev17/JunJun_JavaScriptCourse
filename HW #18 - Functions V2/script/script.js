@@ -1,3 +1,4 @@
+"use strict";
 /*
     Вам нужно написать реализацию функции padString, которая принимает 4 аргумента:
 
@@ -25,4 +26,41 @@
     размер введенной строки, нужно строку обрезать при помощи метода subst
 */
 
-//const padString = (str, n, )
+const padString = (str,leng,symb = "",side = false) => {
+
+    if (typeof str !== "string") {
+        return "Error: First data must be a string";
+    } else if (typeof leng !== "number") {
+        return "Error: Second data must be a number";
+    }
+
+    let switchSide;
+    if (side === true) {
+        switchSide = 1;
+    } else if (side === false) {
+        switchSide = 0;
+    } else if (side === "undefined") {
+        switchSide = 0;
+    } else if (side === String(side)) {
+        return "Error: Fourth data must be true or false"
+    }
+
+    const mainTarget = () => {
+        if ((leng >= str.length) && (switchSide === 0) && (symb.length === 1)) {
+            let plsStr;
+            let symbRep = symb.repeat(leng);
+            plsStr = str + symbRep;
+            return plsStr;
+        } else if (leng < str.length) {
+            return str.substr(str[length],leng);
+        } else if ((leng >= str.length) && (switchSide === 1) && (symb.length === 1)) {
+            let leftStr;
+            let symbRepeat = symb.repeat(leng);
+            leftStr = symbRepeat + str;
+            return leftStr;
+        }
+    };
+
+    return mainTarget();
+
+};
