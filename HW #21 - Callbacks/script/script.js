@@ -1,3 +1,5 @@
+"use strict";
+
 const exponentiation = (first,second) => {
     const resultExponentiation = Math.pow(first,second);
     return alert("Result of exponentiation " + first + " and " + second + " is a " + resultExponentiation);
