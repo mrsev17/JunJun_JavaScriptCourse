@@ -70,8 +70,6 @@ const workMethod = testArr.map(function() {
         if (result < maxPoint) {
             result += testArr[i];
             counter += 1;
-            console.log(result + " - result");
-            console.log(counter + " - counter");
         } else if (result > maxPoint) {
             counter += 0;
         }
