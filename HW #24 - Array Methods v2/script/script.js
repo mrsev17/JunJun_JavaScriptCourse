@@ -90,7 +90,6 @@ const cloneReverse = someArr => {
 
 
 const workArr = [[1, 2, 3], [4, 5], [6]];
-
 const togetherArr = workArr.reduce((total,amount) => {
     return total.concat(amount);
 },[]);
@@ -101,15 +100,12 @@ const summaryAll = togetherArr.reduce((total,amount) => {
 
 
 const workArr = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]];
-
 const togetherArr = workArr.reduce((total,amount) => {
     return total.concat(amount);
 },[]);
-
 const togetherArrSec = togetherArr.reduce((total,amount) => {
     return total.concat(amount);
 },[]);
-
 const summaryAll = togetherArrSec.reduce((total,amount) => {
     return total + amount;
 });
